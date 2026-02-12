@@ -91,11 +91,11 @@ console.log(titulo);
 console.log(artista);
 
 disco.mostrarInfo();
-disco.mostrarcanciones();
+disco.mostrarCanciones();
 disco.agregarCancion('close friend');
-disco.mostrarcanciones();
+disco.mostrarCanciones();
 disco.eliminarCancion('close friend');
-disco.mostrarcanciones();
+disco.mostrarCanciones();
 
 console.log(disco.disponible); 
 disco.cambiarEstado();
