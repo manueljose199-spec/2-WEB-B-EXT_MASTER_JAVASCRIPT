@@ -28,11 +28,22 @@ const disco = {
     agregarCancion(nombre){
         this.canciones.push(nombre);
         console.log(`Cancion agregada: ${nombre}`)
-    }
+    },
 
     //Ejercicio:
     //Eliminar cancion 
     // Cambiar estado de disco a NO disponible
+
+
+      eliminarCancion() {
+  this.canciones.pop();
+  console.log("Canción eliminada");
+},
+  cambiarEstado(){
+    
+    this.disponible = !this.disponible;
+}
+
 }
 
 //Acceder a los datos con notacion de punto
@@ -78,3 +89,15 @@ const {titulo, artista} = disco;
 
 console.log(titulo);
 console.log(artista);
+
+disco.mostrarInfo();
+disco.mostrarcanciones();
+disco.agregarCancion('close friend');
+disco.mostrarcanciones();
+disco.eliminarCancion('close friend');
+disco.mostrarcanciones();
+
+console.log(disco.disponible); 
+disco.cambiarEstado();
+
+console.log(disco.disponible); 
