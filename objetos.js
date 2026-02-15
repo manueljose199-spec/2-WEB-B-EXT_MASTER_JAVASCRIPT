@@ -101,3 +101,47 @@ console.log(disco.disponible);
 disco.cambiarEstado();
 
 console.log(disco.disponible); 
+
+
+//practica de campus 
+
+console.log("practica de campus")
+
+const libro = {
+    titulo: "Cien Años de Soledad",
+    autor: "Gabriel García Márquez",
+    anio: 1967,
+    estado: "disponible",
+    capitulos: ["Capítulo 1", "Capítulo 2", "Capítulo 3"],
+
+    describirLibro() {
+        console.log(`Libro titulado "${this.titulo}", escrito por ${this.autor} en el año ${this.anio}, el estado es: ${this.estado}.`);
+    },
+
+    agregarCapitulo(nombreCapitulo) {
+        this.capitulos.push(nombreCapitulo);
+        console.log(`Capítulo agregado: ${nombreCapitulo}`);
+    },
+
+    eliminarCapitulo() {
+        const eliminado = this.capitulos.pop();
+        console.log(`Capítulo eliminado: ${eliminado}`);
+    },
+
+    cambiarEstado() {
+        if (this.estado === "disponible") {
+            this.estado = "prestado";
+        } else {
+            this.estado = "disponible";
+        }
+        console.log(`El libro ahora está: ${this.estado}`);
+    }
+};
+
+libro.describirLibro();
+libro.agregarCapitulo("Capítulo 7");
+console.log(libro.capitulos);
+libro.eliminarCapitulo();
+console.log(libro.capitulos);
+libro.cambiarEstado();
+libro.describirLibro();
