@@ -6,7 +6,7 @@
   
   body {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
-    background-color: #adedf1d1;
+    background-color: #bad1d2d1;
     color: #eaeaea;
     line-height: 1.6;
   }
@@ -82,3 +82,25 @@
     color: #555;
   }
   
+  .galeria {
+  display: flex;
+  justify-content: flex-start; /* Las manda a la izquierda */
+  gap: 20px; /* Espacio entre imágenes */
+  flex-wrap: wrap; /* Si no caben, bajan */
+}
+
+.galeria__item {
+  width: 300px; /* Tamaño de cada bloque */
+  text-align: left;
+}
+
+.galeria__img {
+  width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.galeria__texto {
+  margin-top: 8px;
+  font-size: 14px;
+}
