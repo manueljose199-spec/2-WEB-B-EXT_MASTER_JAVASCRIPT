@@ -102,8 +102,17 @@ disco.cambiarEstado();
 
 console.log(disco.disponible); 
 
+//-----------------------------------------------------------------------------------------------------------------------------------------------------
 
-//practica de campus 
+//-----------------------------------------------------------------------------------------------------------------------------------------------------
+
+//-----------------------------------------------------------------------------------------------------------------------------------------------------
+
+//-----------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+//----------------------------------------------------------practica de campus------------------------------------------------------------------------- 
+
 
 console.log("practica de campus")
 
@@ -115,11 +124,15 @@ const libro = {
     capitulos: ["Capítulo 1", "Capítulo 2", "Capítulo 3"],
 
     describirLibro() {
+        
+console.log("descripción del libro")
         console.log(`Libro titulado "${this.titulo}", escrito por ${this.autor} en el año ${this.anio}, el estado es: ${this.estado}.`);
     },
 
     agregarCapitulo(nombreCapitulo) {
         this.capitulos.push(nombreCapitulo);
+        
+console.log("agregar capitulo")
         console.log(`Capítulo agregado: ${nombreCapitulo}`);
     },
 
