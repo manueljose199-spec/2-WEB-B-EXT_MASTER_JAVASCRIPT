@@ -6,7 +6,7 @@
   
   body {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
-    background-color: #bad1d2d1;
+    background-color: #34cfd7d1;
     color: #eaeaea;
     line-height: 1.6;
   }
@@ -37,10 +37,12 @@
   }
   
   .main {
-    padding: 2.5rem 1rem;
-    display: flex;
-    justify-content: center;
-  }
+  padding: 2.5rem 1rem;
+  display: flex;
+  flex-direction: column;   
+  align-items: center;      
+  gap: 3rem;                
+}
   
   .section {
     width: 100%;
