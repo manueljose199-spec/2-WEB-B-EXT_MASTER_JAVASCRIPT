@@ -1,0 +1,103 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background: #0f172a;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  width: 100%;
+  max-width: 400px;
+}
+
+.card {
+  background: #1e293b;
+  padding: 25px;
+  border-radius: 10px;
+  color: white;
+  box-shadow: 0 0 20px rgba(0,0,0,0.4);
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.password-box {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.password-box input {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  outline: none;
+  background: #334155;
+  color: white;
+  border-radius: 5px 0 0 5px;
+}
+
+.password-box button {
+  background: #22c55e;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 0 5px 5px 0;
+}
+
+.control {
+  margin-bottom: 15px;
+}
+
+.control input {
+  width: 100%;
+}
+
+.options {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 15px;
+}
+
+.strength {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+.bars {
+  display: flex;
+  gap: 5px;
+}
+
+.bars div {
+  width: 15px;
+  height: 8px;
+  background: gray;
+}
+
+.generate {
+  width: 100%;
+  padding: 10px;
+  background: #22c55e;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+.generate:hover {
+  background: #16a34a;
+}
